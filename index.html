@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./movie.css">
 </head>
 <body>
-    
+    <div id="searchDiv">
+        <h1>Movie Search Engine</h1>
+        <input oninput="debounce(main, 1000)" type="text" id ="query" placeholder="Search Movie Here...">
+    </div>
+    <div id="movies"></div>
+    <div id="ui"></div>
 </body>
 </html>
+<script src="./movie.js"></script>
